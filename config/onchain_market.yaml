@@ -1,0 +1,9 @@
+# ---------------------------------------------------------------------------
+# Phase 3 on-chain price market experiment (experiments/onchain_market.py). NOT used by the default demo.
+# Instance, solvers, market rounds/step0 and the overhead model are read from base_config (read-only).
+# ---------------------------------------------------------------------------
+base_config: config/demo.yaml
+salt_seed: 7                      # seeded commit salts -> reproducible gas
+submit_mode: batch                # honest exact submitter per round: batch = one submitBatch; single = one submit per workflow
+reference_block_gas_limit: 30000000   # plan value (PHASE3 section 5); [VERIFY] against current mainnet
+out_dir: results/onchain_market

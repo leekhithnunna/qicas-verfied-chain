@@ -1,0 +1,25 @@
+budget,method,label,n_subproblems,sa_matches_or_beats,sa_strictly_beats
+16,qaoa_complete,"quantum algorithm, classically simulated",324,0.833333,0.833333
+16,qaoa_complete_ideal,"quantum algorithm, classically simulated (ideal angles: optimistic upper bound)",324,0,0
+16,qaoa_ring,"quantum algorithm, classically simulated",324,0.959877,0.959877
+16,qaoa_ring_ideal,"quantum algorithm, classically simulated (ideal angles: optimistic upper bound)",324,0,0
+16,random,sanity baseline,324,0.787037,0.787037
+16,sb_ballistic,quantum-inspired,324,0,0
+16,sb_discrete,quantum-inspired,324,0,0
+16,sqa,quantum-inspired,324,0.799383,0.799383
+64,qaoa_complete,"quantum algorithm, classically simulated",324,0.737654,0.737654
+64,qaoa_complete_ideal,"quantum algorithm, classically simulated (ideal angles: optimistic upper bound)",324,0.0401235,0
+64,qaoa_ring,"quantum algorithm, classically simulated",324,0.83642,0.83642
+64,qaoa_ring_ideal,"quantum algorithm, classically simulated (ideal angles: optimistic upper bound)",324,0.0401235,0
+64,random,sanity baseline,324,0.731481,0.731481
+64,sb_ballistic,quantum-inspired,324,0.0432099,0.00308642
+64,sb_discrete,quantum-inspired,324,0.0401235,0
+64,sqa,quantum-inspired,324,0.487654,0.45679
+256,qaoa_complete,"quantum algorithm, classically simulated",324,0.648148,0.496914
+256,qaoa_complete_ideal,"quantum algorithm, classically simulated (ideal angles: optimistic upper bound)",324,0.330247,0
+256,qaoa_ring,"quantum algorithm, classically simulated",324,0.768519,0.691358
+256,qaoa_ring_ideal,"quantum algorithm, classically simulated (ideal angles: optimistic upper bound)",324,0.342593,0.0185185
+256,random,sanity baseline,324,0.771605,0.580247
+256,sb_ballistic,quantum-inspired,324,0.330247,0
+256,sb_discrete,quantum-inspired,324,0.330247,0
+256,sqa,quantum-inspired,324,0.447531,0.154321

@@ -1,0 +1,62 @@
+# QICAS Phase 5 — 4-validator Hyperledger Besu QBFT network. TEST ONLY: deterministic keys and genesis
+# (chain/besu/generate.py), zero gas price, chainId 1338. Models a provider consortium on one laptop; it is NOT a
+# production deployment.
+#
+#   docker compose -f chain/besu/docker-compose.yml up -d      (or scripts/besu_up.ps1: also waits for blocks)
+#   docker compose -f chain/besu/docker-compose.yml down -v    (stop + wipe chain data)
+#
+# Image pinned to an exact release (not "latest"): hyperledger/besu 26.10.2 (released 2026-10-26),
+# digest sha256:bc599f5ef95a3d5d03f966cd2c1f7dfd7353834c84bc5651ffb4af884860a2c7
+# JSON-RPC: validator<i> on 127.0.0.1:854<4+i> (loopback only); validator1 = 127.0.0.1:8545 = bootnode.
+name: qicas-besu
+
+x-besu: &besu
+  image: hyperledger/besu:26.10.2@sha256:bc599f5ef95a3d5d03f966cd2c1f7dfd7353834c84bc5651ffb4af884860a2c7
+  environment:
+    JAVA_OPTS: "-Xmx768m"
+  restart: "no"
+  entrypoint:
+    - /opt/besu/bin/besu
+    - --genesis-file=/config/genesis.json
+    - --node-private-key-file=/config/key
+    - --data-path=/opt/besu/data
+    - --sync-mode=FULL
+    - --min-gas-price=0
+    - --rpc-http-enabled
+    - --rpc-http-host=0.0.0.0
+    - --rpc-http-port=8545
+    - --rpc-http-api=ETH,NET,WEB3,QBFT,TXPOOL
+    - --rpc-http-cors-origins=*
+    - --host-allowlist=*
+    - --p2p-port=30303
+    - --bootnodes=enode://f87968b1e7809f6b5b5f78fbe2626af48c6cd6b8b9fa31f41d9612c3ef01b47b7fc31ea593f0d0115dff4192077196161393d45c1a479319c72efa909e91d53a@172.16.239.11:30303
+
+services:
+  validator1:
+    <<: *besu
+    volumes: ["./genesis.json:/config/genesis.json:ro", "./nodes/validator1/key:/config/key:ro", "v1:/opt/besu/data"]
+    ports: ["127.0.0.1:8545:8545"]
+    networks: {qbft: {ipv4_address: 172.16.239.11}}
+  validator2:
+    <<: *besu
+    volumes: ["./genesis.json:/config/genesis.json:ro", "./nodes/validator2/key:/config/key:ro", "v2:/opt/besu/data"]
+    ports: ["127.0.0.1:8546:8545"]
+    networks: {qbft: {ipv4_address: 172.16.239.12}}
+  validator3:
+    <<: *besu
+    volumes: ["./genesis.json:/config/genesis.json:ro", "./nodes/validator3/key:/config/key:ro", "v3:/opt/besu/data"]
+    ports: ["127.0.0.1:8547:8545"]
+    networks: {qbft: {ipv4_address: 172.16.239.13}}
+  validator4:
+    <<: *besu
+    volumes: ["./genesis.json:/config/genesis.json:ro", "./nodes/validator4/key:/config/key:ro", "v4:/opt/besu/data"]
+    ports: ["127.0.0.1:8548:8545"]
+    networks: {qbft: {ipv4_address: 172.16.239.14}}
+
+networks:
+  qbft:
+    driver: bridge
+    ipam:
+      config: [{subnet: 172.16.239.0/24}]
+
+volumes: {v1: {}, v2: {}, v3: {}, v4: {}}

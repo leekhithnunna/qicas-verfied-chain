@@ -1,0 +1,67 @@
+# Phase 2 fair-comparison benchmark (docs/plans/PHASE2_QUANTUM.md §3). NOT used by the default demo.
+# Run:  .\.venv\Scripts\python.exe -m experiments.quantum_benchmark            (full, minutes)
+#       .\.venv\Scripts\python.exe -m experiments.quantum_benchmark --smoke    (seconds)
+base_config: config/demo.yaml          # synthetic generator settings (unchanged)
+output_dir: results/quantum
+
+subproblems:
+  tasks_min: 3                         # 3..5 tasks x 4 regions = 12..20 qubits, 64..1024 feasible states
+  tasks_max: 5
+  tuning_seeds: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109]
+  test_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+  market_rounds: 25
+  price_rounds: [1, 13, 25]            # 1-indexed market rounds whose prices define the sub-problems
+
+run_seeds: 30                          # seeds 0..29 for every method on every sub-problem
+budgets: [16, 64, 256]                 # energy evaluations (primary budget unit)
+workers: 4                             # processes (0 = min(4, cpus)). Results do not depend on it.
+
+tuning:                                # grid search on TUNING instances only, frozen before the test run
+  max_subproblems: 30                  # first N tuning sub-problems (by manifest order)
+  seeds: 5                             # seeds 0..4
+  criterion: mean_gap                  # lowest mean normalised gap; ties -> higher P(opt) -> grid order
+
+methods:                               # name in core.subproblem.SUBSOLVERS -> grid (<= 12 settings)
+  random:
+    grid: [{}]
+  sa:
+    grid: [{t0: 1.0, t_end: 0.01}, {t0: 2.0, t_end: 0.01}, {t0: 4.0, t_end: 0.01},
+           {t0: 1.0, t_end: 0.1},  {t0: 2.0, t_end: 0.1},  {t0: 4.0, t_end: 0.1}]
+  sqa:
+    grid: [{replicas: 2, T: 0.05}, {replicas: 4, T: 0.05}, {replicas: 8, T: 0.05},
+           {replicas: 2, T: 0.2},  {replicas: 4, T: 0.2},  {replicas: 8, T: 0.2}]
+  sb_ballistic:
+    grid: [{xi: 0.25, steps: 50}, {xi: 0.5, steps: 50}, {xi: 1.0, steps: 50},
+           {xi: 0.25, steps: 200}, {xi: 0.5, steps: 200}, {xi: 1.0, steps: 200}]
+  sb_discrete:
+    grid: [{xi: 0.25, steps: 50}, {xi: 0.5, steps: 50}, {xi: 1.0, steps: 50},
+           {xi: 0.25, steps: 200}, {xi: 0.5, steps: 200}, {xi: 1.0, steps: 200}]
+  qaoa_ring:
+    grid: [{p: 1, opt_frac: 0.0, gamma_max: 1.5}, {p: 1, opt_frac: 0.0, gamma_max: 3.0},
+           {p: 1, opt_frac: 0.5, gamma_max: 1.5}, {p: 1, opt_frac: 0.5, gamma_max: 3.0},
+           {p: 2, opt_frac: 0.0, gamma_max: 1.5}, {p: 2, opt_frac: 0.0, gamma_max: 3.0},
+           {p: 2, opt_frac: 0.5, gamma_max: 1.5}, {p: 2, opt_frac: 0.5, gamma_max: 3.0}]
+  qaoa_complete:
+    grid: [{p: 1, opt_frac: 0.0, gamma_max: 1.5}, {p: 1, opt_frac: 0.0, gamma_max: 3.0},
+           {p: 1, opt_frac: 0.5, gamma_max: 1.5}, {p: 1, opt_frac: 0.5, gamma_max: 3.0},
+           {p: 2, opt_frac: 0.0, gamma_max: 1.5}, {p: 2, opt_frac: 0.0, gamma_max: 3.0},
+           {p: 2, opt_frac: 0.5, gamma_max: 1.5}, {p: 2, opt_frac: 0.5, gamma_max: 3.0}]
+  qaoa_ring_ideal:                     # optimistic upper bound: exact-expectation angles (uncounted)
+    grid: [{p: 1}, {p: 2}, {p: 3}]
+  qaoa_complete_ideal:
+    grid: [{p: 1}, {p: 2}, {p: 3}]
+
+design:                                # open design questions (docs/QUANTUM_NOTES.md)
+  enabled: true
+  max_subproblems: 60                  # first N test sub-problems
+  depths: [1, 2, 3]                    # Q1 ring vs complete vs p (QAOA-ideal, exact probabilities)
+  warm_eps: [0.1, 0.3]                 # Q3 warm start from SQA
+  warm_p: 2
+  warm_sqa_budget: 64
+
+market:                                # QAOA inside the market: UPPER bound only; lower bound always exact
+  enabled: true
+  seeds: [0, 1, 2]
+  rounds: 25
+  solver: qaoa_ring                    # tuned params at `budget` are used
+  budget: 256

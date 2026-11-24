@@ -1,0 +1,4517 @@
+{
+  "plan": "docs/plans/PHASE2_QUANTUM.md \u00a73",
+  "config": "config/quantum_bench.yaml",
+  "smoke": false,
+  "budget_unit": "energy evaluations (SubProblem counter); wall-clock is secondary",
+  "budgets": [
+    16,
+    64,
+    256
+  ],
+  "run_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "test_manifest_hash": "0x725a35a8c665117f2d3caf701dee1744087cd367914f10be8d8426646a8899bc",
+  "tuning_manifest_hash": "0xa75ec37352420fe1f2ad7499d8236216671de5b3531864316ae5002ba0b82cbc",
+  "test_subproblems": [
+    {
+      "sp_id": "s0-w1-r1",
+      "hash": "0xcba106d589d54c70519dc040ffae7a442f3de8640953eb1d2567dd3fd24e2b8b",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w2-r1",
+      "hash": "0xf78891b9fdef1176aaab22a5272447d8f9f64cd97e06b33acb131db2f0cc11ff",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w4-r1",
+      "hash": "0xd93399af582b2a79bcc735fc10e9d70fa4deabe72ea4b5374798eb4d2cab04e8",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w5-r1",
+      "hash": "0x0eebca6de6dffe0a270c93b731f0821a2dae193618937d0cfd83e13c0a1850e1",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w6-r1",
+      "hash": "0x24a01a4b4d9d751bddfd43e4120a16f3cabeaaad9dc8753e0dd3b0c4aafb6ce6",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w7-r1",
+      "hash": "0x847788a1fe211699d47893479a71594696a6ee9624575c149ebbbd950991d753",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w1-r13",
+      "hash": "0x7400642541861e6d5660b2cdacb3b44918fa10fc843209071bfbe2ee892c69b6",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11036765,
+        0,
+        5717295,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w2-r13",
+      "hash": "0x9bf6aeb90df243cc403204c53af692e1f34c8d82e149b76321c9e7f46e5cdd78",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11036765,
+        0,
+        5717295,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w4-r13",
+      "hash": "0x783f8f667f840724d111a1dbe9089e948e5e83449ddfeca2dcee8ad50ad44c78",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11036765,
+        0,
+        5717295,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w5-r13",
+      "hash": "0x208411fe1b452b621ec19d5692ea945428bba6ec85cf4851ab072e093a8d8f05",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11036765,
+        0,
+        5717295,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w6-r13",
+      "hash": "0x19d79aade879c8e824d7de7088b2128d88b83b9f25870aeefe9596d2650c8276",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11036765,
+        0,
+        5717295,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w7-r13",
+      "hash": "0x91b82c8d83a3923e306a19e3bc4c4d8c3fd5fb6378c6dc1c3de35d91bc3a136e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11036765,
+        0,
+        5717295,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w1-r25",
+      "hash": "0x66af25f05fa59bc75d70d61b7ae0f3c67a6498498863a5bd2742321812091861",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7587043,
+        0,
+        3090845,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w2-r25",
+      "hash": "0x96ceeb69bb116d4b13e60c967d6e6fe29c5a2b0c640e2f3969b9eb0827a386ef",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7587043,
+        0,
+        3090845,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w4-r25",
+      "hash": "0xf9e2a8b4fe07a08b4ba0ea34e27a23305745d452e03dd7a88ec9fa516cbb80e9",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7587043,
+        0,
+        3090845,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w5-r25",
+      "hash": "0xddb4919e4f058c216cbfa46ce0284b4fe48691d597297c8f5f22d08559745469",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7587043,
+        0,
+        3090845,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w6-r25",
+      "hash": "0xb7106a6f60d9d0c58452a5cd8480dde0fa1b89f5ac81bb6f03060c381830459b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7587043,
+        0,
+        3090845,
+        0
+      ]
+    },
+    {
+      "sp_id": "s0-w7-r25",
+      "hash": "0x24c62f1c1e40e19b0168beb77ed7d94aff8f62d1fb631d8476e01c8a61dd7a39",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7587043,
+        0,
+        3090845,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w0-r1",
+      "hash": "0x87a80b208ce6c5746da112579641523b6f682450622a31b28f8a78926823837c",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w1-r1",
+      "hash": "0x060a2219f51d72d8d97d03a274c0460855f1f64a9865c210ff151defd2b4c121",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w3-r1",
+      "hash": "0x818041a831962a543869c985b23ccf1394bbdee3d79378e6d8d407342a7b6857",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w4-r1",
+      "hash": "0xe8f3275f0fed9e5296ba3d29afb7c8f53c025a247776e7b5c633ebc1638dd537",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w5-r1",
+      "hash": "0xcd28beb937d1e1c6a804413736a9e25c4a4a80e2d16b97f1694ec58fa697c828",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w6-r1",
+      "hash": "0x3caf047d259d15f4d3347c18c140b490bb770fac482b9e0d048963d7fa421d99",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w7-r1",
+      "hash": "0xcb1356a2b838545b602d42d43e3b9c43b62df0c30e4312e4cdacf46252839936",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w0-r13",
+      "hash": "0x5d49183baf76507c5d814d80fe17a6d97d110a1cb4776af6893a55ab33456149",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10117393,
+        3405841,
+        5380585,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w1-r13",
+      "hash": "0x363d6ca461891dc35ab1b49cb8595b55aba3915d943d727f7f3faa96b72d488c",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10117393,
+        3405841,
+        5380585,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w3-r13",
+      "hash": "0x9aba1508dea0efc909e924f98349597a762d733ebeb4e56069ac78f340e53374",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        10117393,
+        3405841,
+        5380585,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w4-r13",
+      "hash": "0x60d68a0f86e74001f28ee3c0e2f4021c0a449b8cfae5308c7fbdc2027d63a57b",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        10117393,
+        3405841,
+        5380585,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w5-r13",
+      "hash": "0xe02b53ee87f76b211b6d6f7b17b35af110b1a00a441af56c634b02b35687d336",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10117393,
+        3405841,
+        5380585,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w6-r13",
+      "hash": "0xdf16e4bdef2408ef394c6433a64b9a62aa04f846a2e326fed05d4b69db4bd917",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10117393,
+        3405841,
+        5380585,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w7-r13",
+      "hash": "0xbd9818d0754abd2f1824243d279b844a0f44dbd0a5ca04d2a25357ec6311019f",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10117393,
+        3405841,
+        5380585,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w0-r25",
+      "hash": "0xf590a6dd425f6fbfa7dec6146b41935e4406faadad21645639d544b5541bd619",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12467464,
+        1326261,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w1-r25",
+      "hash": "0x619b34e76c6704e3b16d2a0ba1458b9795b3f3bbbf345af1ab5750bf24994fb4",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        12467464,
+        1326261,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w3-r25",
+      "hash": "0x336a072236d6137c2822f14feae38272ab40c1e4a417c42bb69e367ac45b6e18",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12467464,
+        1326261,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w4-r25",
+      "hash": "0x72cd95f83dbce4b0ee6bd5d9a00e46f6041db705ead74f923d8bdad56830f85f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12467464,
+        1326261,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w5-r25",
+      "hash": "0x58dcf7cb8667c9a6a90ce70bab72f7f858a87b21729d310eba57e1c0fc15d440",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12467464,
+        1326261,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w6-r25",
+      "hash": "0xdfc3937d8056b02dd2c176f014c01bd97dcf2fe773a10981e0d0262b9bf534d4",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12467464,
+        1326261,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s1-w7-r25",
+      "hash": "0xa80317aa8c5107b3e2d2f1805e6bd132863c9b8f89ffd484a981c8bc59fc4ebb",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12467464,
+        1326261,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w0-r1",
+      "hash": "0x10ae4cea8ab9409da9a7741b677d173cb6735d6c0a571576e8989d4a53420eb4",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w1-r1",
+      "hash": "0x298336c452113bf55a99a4d2873406882c4a21966083f5fa599940b9c3119196",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w2-r1",
+      "hash": "0xd8a07e5a49e6e213e3d850fe7285471ef9be73f34bf1d53ebf8175320a9f56a8",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w4-r1",
+      "hash": "0x07f1c19d8ac753cf624eb15660ea2a9e1ea501e0856b596384b32176fb9146ca",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w5-r1",
+      "hash": "0x0c07b6f2296f6480438cd5cc681d0a04e03e322c89f3d2951acf806cb3360091",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w6-r1",
+      "hash": "0xf283fc110be68a7eb5af8e430d1361df02f44bd9083569f8109573d7de7d3fca",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w0-r13",
+      "hash": "0x88f1005b766ab0475bfe52dbeef5509866f344f1566f11a747b9e843fdc100c5",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8247374,
+        3471276,
+        5212994,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w1-r13",
+      "hash": "0x1d91e87a5bef04a42fbecff0ec6805fdd0280e93147fbb03b8d8737a1f6b6f7f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8247374,
+        3471276,
+        5212994,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w2-r13",
+      "hash": "0x651c11eecf276489efeafea72e7ac3fa3806ea4742737673112891ca7b2d0ca1",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8247374,
+        3471276,
+        5212994,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w4-r13",
+      "hash": "0xd5a1cf35751147a73ca117fe2870741eb75c4700434d262cd2629deaaa7624e3",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8247374,
+        3471276,
+        5212994,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w5-r13",
+      "hash": "0x991958395d4c163478c0f8fc666b1c3eedd3a5d460acbb484c49d7496b8e537b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8247374,
+        3471276,
+        5212994,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w6-r13",
+      "hash": "0x0698010fe3cc16cd88c3e22d49591f4bd0924fcebdf4f8d5e448a3c800dac9c6",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8247374,
+        3471276,
+        5212994,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w0-r25",
+      "hash": "0xbea6e859bc790c3e1f546be9213cb30a64060bd39b227d1573ee068a59adc1c5",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8256694,
+        2150250,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w1-r25",
+      "hash": "0x251daafa7c98f5b458edabf7d5539169b3ca8e1e7023f4dc612c98764c28a418",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8256694,
+        2150250,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w2-r25",
+      "hash": "0x52882c5ee669efbb2e2308ede35feece0c504fdebd01580978f3cadd429526a5",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8256694,
+        2150250,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w4-r25",
+      "hash": "0xf468e0cb4ee729287b3796a05eb6322ac68039f12b30f177f4efe09eb69929df",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8256694,
+        2150250,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w5-r25",
+      "hash": "0xc12eadff63c90d22ee6cadbf36914a48da1dcb08fb1cb2dc0f2b9c4810f6713c",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8256694,
+        2150250,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s2-w6-r25",
+      "hash": "0x3c95b62433f3d35873fde1f961c24f7ace811d2020c0a9dc12443641ebd78f31",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8256694,
+        2150250,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w0-r1",
+      "hash": "0x847294a225ff2134c9aac87794a8b8ade61ef221c348c56aabfe9c5878f4f1de",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w1-r1",
+      "hash": "0x025f80d6df7ae90c81b7dc7800091d9be0be4779358247e51dc980e08ff79de1",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w4-r1",
+      "hash": "0xaa6989dfeeed61bab01a8ed1561515178d20028f2a255e7fd91e3514ce03563c",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w5-r1",
+      "hash": "0x9b5e6718b41500ed944b220d6198142697ef76294da9eb08e90e4af695daec4f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w6-r1",
+      "hash": "0x644584ec5823e94ea1a63f783f31091039ed617c2cf5b402e962c4fa04f02dee",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w7-r1",
+      "hash": "0x4fa9e43988ca91ef42009519233154a00a5e07ee92f289d659b836ce76d6373a",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w0-r13",
+      "hash": "0xb6d2ae5c60eccadeff6ed4e3877e0d0fff75d06e42dbe92e0e263ebae1a8c2be",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10868976,
+        3005049,
+        5264750,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w1-r13",
+      "hash": "0x80949bc9dd056bbb973f8fd4464f0e36fbd013d57aa332bf6af38b0b036a635f",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10868976,
+        3005049,
+        5264750,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w4-r13",
+      "hash": "0x35f67454583623a62aa0f35403a8234a8825d35d38fdde56b0c3d59c14e96eb1",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        10868976,
+        3005049,
+        5264750,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w5-r13",
+      "hash": "0x01ccf746b8936c10a4dcc1c3be8a2b21bc42214c097ed59aa7308929c5beedb8",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        10868976,
+        3005049,
+        5264750,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w6-r13",
+      "hash": "0x5da62061fbd72adc6e93b00df519d270316aef6bf232da5b4febee2cb08534a4",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10868976,
+        3005049,
+        5264750,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w7-r13",
+      "hash": "0x6c858ca9684471fbaa5611f0748fba52c673c88ab06a91fdd3646800f9d9110c",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10868976,
+        3005049,
+        5264750,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w0-r25",
+      "hash": "0x58d0d2c66846393424edbebf2b881868cdf266354c7a9fed8a0f3de274974111",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7705899,
+        979918,
+        4131780,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w1-r25",
+      "hash": "0x851a90a82be9b9b49af521a29df2aa8c9ddd3a293b427fa110f7da3edb1316b4",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7705899,
+        979918,
+        4131780,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w4-r25",
+      "hash": "0x7f4d8838fc5ef88bec3746b00a178568825db357841dca9a822c8c0a2ba31d82",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7705899,
+        979918,
+        4131780,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w5-r25",
+      "hash": "0xf7e033af5e459ee8f69416e59b709dec6e1476ce17d39cd2e172b284faa2a234",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7705899,
+        979918,
+        4131780,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w6-r25",
+      "hash": "0xf19addd0d52243905d1bdc7b1953eaf60f95e7eb5ff84fb1652d1058bdd50af1",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7705899,
+        979918,
+        4131780,
+        0
+      ]
+    },
+    {
+      "sp_id": "s3-w7-r25",
+      "hash": "0x347c5f3bedda4e439dd0ad64a025138b0d31d8048f65b4725c346c08ebe72311",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7705899,
+        979918,
+        4131780,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w0-r1",
+      "hash": "0x432cf89325c51f48a0d2074b4a281d946142406f7080cf49d5ba6b3406db4eeb",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w1-r1",
+      "hash": "0xffbb5cd8e83bd3b1747e95afb77d7d9a25a219b1ba722c3924c89a65e949a31d",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w2-r1",
+      "hash": "0x1f809ffd510a35b67db11e4201780c91a4e461574a1fdaa5cb49aad12ed66a17",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w3-r1",
+      "hash": "0x06234aa662f09276e5ed33ae2203d257c698db7d3d5e592f903beb7439af8d4b",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w4-r1",
+      "hash": "0xf4d6e577ef8d9feded38be6fc73059a27e055ead482df44bca77d37c59559337",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w5-r1",
+      "hash": "0xe5cdf734190bce8b0361ffa0444f2034637673637a3f3076ca9153f6e2ab85d5",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w7-r1",
+      "hash": "0x89a980f2203fd81192c515bcdf1118e44fd7f21ad88b1a440de1c00921ba3e5f",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w0-r13",
+      "hash": "0x734d22c8089447bb64fe223eb46fd62181e441c3dd0d700d2b76d58bbd0b2412",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        6831747,
+        3496490,
+        4992095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w1-r13",
+      "hash": "0xe1a658a3b5adcc522eaf067093a2fd89f992def5f7c7d57cdc11b5e14d32b238",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        6831747,
+        3496490,
+        4992095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w2-r13",
+      "hash": "0x6dc9283bf1bf8e4f1f45499fcd394965c51669e8b38bbfa81bc523782d670d47",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        6831747,
+        3496490,
+        4992095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w3-r13",
+      "hash": "0x983a07e46960d902c0e34730bbcaccb8b07a17548fbc415a58a035b0b844b78f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        6831747,
+        3496490,
+        4992095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w4-r13",
+      "hash": "0x567567a389e4a7369d610e3616043ed480543e31583ca9a2d341601b40cf62eb",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        6831747,
+        3496490,
+        4992095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w5-r13",
+      "hash": "0xbd33af5b9e6d745ffd21361056b5c8a4df66ceca9b1a9572f283eebdd7da00e8",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        6831747,
+        3496490,
+        4992095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w7-r13",
+      "hash": "0x9616a49e72c61570f4770a175c667e029696faf25fd775aaaa1b763d1d8ebb96",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        6831747,
+        3496490,
+        4992095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w0-r25",
+      "hash": "0x1e1e749c9e07facd92476aa308df68d83c34fe87e2781908e6b2f36939483334",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7806415,
+        1868794,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w1-r25",
+      "hash": "0x9337f19e9888f41e46eba321a6d2dcff6e03db881b1082082c3c8911cba2e2d6",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7806415,
+        1868794,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w2-r25",
+      "hash": "0xed45e56926def491930ad7a4df1fe7d45c145cefc96a3e9c56c060a8d2da577e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7806415,
+        1868794,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w3-r25",
+      "hash": "0x212d6c4b05ad3bb6f06a044878f22336ab7c8cb45fc4c2c46acd0889790f793e",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7806415,
+        1868794,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w4-r25",
+      "hash": "0xee9faae23757132cbed53b901b4105c3f156190e3d59580a143f7674ce465212",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7806415,
+        1868794,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w5-r25",
+      "hash": "0xa0fabfff75d3453fedda5cf93be5ce37ce46655722bdfcbb79ec52b8aadeb370",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7806415,
+        1868794,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s4-w7-r25",
+      "hash": "0x0a4b78f220b6445ee860ae6f8070d1e4d51253231a33ad8b3f42046c4d294f56",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7806415,
+        1868794,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w0-r1",
+      "hash": "0x3c8645c037b2fc101356ad97492b3b7c83b601ccfbd57a7a1d0cc2cb21bb730a",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w1-r1",
+      "hash": "0xf93973c773e7a1cfd0b503a0ce4993bc6f9ea36f16346e5b0beb7557253265d8",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w2-r1",
+      "hash": "0x6d1c02635bec309ae1f743312c9b0beb3e44c0cdd5407bd3c5d4f91d9ddf4c8d",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w3-r1",
+      "hash": "0x3ad9dd958fc60d711e08b19cb13a458aa6c1d8f73bcaa50dcc378a93b051056b",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w5-r1",
+      "hash": "0xfe60a50d7392a91894be0fa220c9c6d5e2c6caef52ac6e854a4a99fbc0b0625a",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w7-r1",
+      "hash": "0x42b66b87076d5d1d063ca8be1695a371e72907ec1f1775b2f8b83e0fb06cafbd",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w0-r13",
+      "hash": "0x841186d62f8f0622bbb7e44ca4d2d51aecccf7c7d97bc617e69d1e5ffe820887",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12185599,
+        0,
+        5457398,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w1-r13",
+      "hash": "0x529e8ee3533ae771cd8d18b554a0786bbb15b63318f6882ed9cd2a8dc905188b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12185599,
+        0,
+        5457398,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w2-r13",
+      "hash": "0x067c93f74fd283f04de8ecf247b85ed18956aee8ca13473f1c51dd23b13c7048",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        12185599,
+        0,
+        5457398,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w3-r13",
+      "hash": "0x5aba32d97c5671bbf5cdc544ed45030da834f28af464d1011c599c00d43e9f0c",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12185599,
+        0,
+        5457398,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w5-r13",
+      "hash": "0xf6c148592c83fcaa601a946a65b7446298a26ec585f63a898de2aa37c108b185",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        12185599,
+        0,
+        5457398,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w7-r13",
+      "hash": "0x50e685ef7a131c2abea9c76abc3359defad6f61e9f67f1e79d75c7169d73da5e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12185599,
+        0,
+        5457398,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w0-r25",
+      "hash": "0xd6e67a3ffc118ac77bf948339da7ee8167494d45d9913209c2f94edb7bd5710d",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11713419,
+        1047739,
+        329107,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w1-r25",
+      "hash": "0x542108cd3f5adfe268bc03914ff06807379c2abe607efc4477dd07ca22911791",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11713419,
+        1047739,
+        329107,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w2-r25",
+      "hash": "0x3c6533c047a9939422aed4bdfa14b98c14652f51441a70d2a508fc1278c0f090",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11713419,
+        1047739,
+        329107,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w3-r25",
+      "hash": "0xd00a71c4e8c7661aad4c6ff29af31ddd299458fc408aa4220f1f23fbf265f25d",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11713419,
+        1047739,
+        329107,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w5-r25",
+      "hash": "0x45d687de8d8e8c4a6ea7709cae02ea1f39925034fcbcf633ded3d5e610407458",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11713419,
+        1047739,
+        329107,
+        0
+      ]
+    },
+    {
+      "sp_id": "s5-w7-r25",
+      "hash": "0x042ed25e155cb149039877d1e30c87cf13c13e044660e5b7ca546101d1675934",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11713419,
+        1047739,
+        329107,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w0-r1",
+      "hash": "0x3613edfe0630e8922100a10659432d78d29db49cccc80cd2fd385a3f321af78d",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w2-r1",
+      "hash": "0x5c66d153f95ead466061e9aaa7ec6cbfecd50ae7da8df906887f49a81c570a84",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w5-r1",
+      "hash": "0x86f01d646c9243fd92cb1e353aec63e28b13a8fab80c50f03a87e436e3fcbb62",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w0-r13",
+      "hash": "0x6df272868f9232d42130f88c7154bef296dd4028e127b9d2508c9a6483f6b5f1",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10299961,
+        3608990,
+        6088946,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w2-r13",
+      "hash": "0xb78944f8567516494f573cf44907fc2f2c1b2a5d6106d84d2dac4e2a145152c9",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        10299961,
+        3608990,
+        6088946,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w5-r13",
+      "hash": "0xaee1a52959cb2f2bf1fc2adc5d06bbc1a9f24cb400a07e40be296f36a52ec063",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10299961,
+        3608990,
+        6088946,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w0-r25",
+      "hash": "0x007c1af46a4983cc113bc468703089845f4cf0d83fc11a071afb94e3cfc04039",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        9027976,
+        1561677,
+        4469636,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w2-r25",
+      "hash": "0xc64a7617b73222edce21d204cad7d83f4c79c026e2676143050f2d36ccf50187",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        9027976,
+        1561677,
+        4469636,
+        0
+      ]
+    },
+    {
+      "sp_id": "s6-w5-r25",
+      "hash": "0x7a8b0ba8790f53c47281320ad29e28e17f96bebc07c19351f9d794710cc65570",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        9027976,
+        1561677,
+        4469636,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w0-r1",
+      "hash": "0x6a010f1f3b121286739f36c49bb7047a4c6be4a647a4837c74ff64765d1ca175",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w1-r1",
+      "hash": "0x7115a43d8ac51aa5c9ce6f01524866f6b8eb89112c85af9c01550b2ccd3b765e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w2-r1",
+      "hash": "0xb581d5501b7bb16bd84c84bbd722d9e9dfc215668248d9b263a323808fbbda0f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w4-r1",
+      "hash": "0x0917960fdc0e9b183ecb39ddc24cd71445e38c9c826d550711bb98a1a6905b61",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w5-r1",
+      "hash": "0xf2e24807ca0d0d8168516227d100b412b73ebf8001b4a04fa2efba7a93234b4c",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w7-r1",
+      "hash": "0x0bd2352a8fabe3ea1d61e2a1db3801842c385cfe589a7f4021bb5a5e3fda5d1d",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w0-r13",
+      "hash": "0x6b6593c188e6262886ea733a22f4df4f077e61dbbc48834e68a305fff8de77e0",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12129518,
+        0,
+        5807351,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w1-r13",
+      "hash": "0x55d3710ef0ffc814f046c3b626fa3c2a8dd88ee54239fc93c6206482f15b5df8",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12129518,
+        0,
+        5807351,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w2-r13",
+      "hash": "0xdefaa7f7427a81b718306b39844952b9f5da3ef93e8cbe87bbad6cdc852db701",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12129518,
+        0,
+        5807351,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w4-r13",
+      "hash": "0x9aa5b9212d1919b1fc45933402a3f51adac6b305ece291a2214636688885a030",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12129518,
+        0,
+        5807351,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w5-r13",
+      "hash": "0xd522132c3b73b69f3faf43bdf4e06419cb8962384676fbe0d208d92f615f1c4b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12129518,
+        0,
+        5807351,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w7-r13",
+      "hash": "0x12901d029b3380c9885cafba5b92218955e823c4e89d82f71834aa77a549b80f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12129518,
+        0,
+        5807351,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w0-r25",
+      "hash": "0x929f33eb2606499c7bedbff026dcfdfc55cef868d1c433b2b42fce80df754886",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8980304,
+        0,
+        4543943,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w1-r25",
+      "hash": "0xcb22163ea33d35be6c2641d963da8d502929d9e8d5dcfa917f4ef5f1040c376b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8980304,
+        0,
+        4543943,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w2-r25",
+      "hash": "0xff6ff0da908c083057571cd3e8fb8b2682f0478400f94eac49aad9a43b8d3a60",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8980304,
+        0,
+        4543943,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w4-r25",
+      "hash": "0xb8f4beef02e0f93bac99808a9076a688dd9c497eb8966f2e58eba1d0c474254e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8980304,
+        0,
+        4543943,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w5-r25",
+      "hash": "0x1fe74d5490dcb6e518312e8cecf23799ca2c2dfe2fe49a5978796c1c5365c150",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8980304,
+        0,
+        4543943,
+        0
+      ]
+    },
+    {
+      "sp_id": "s7-w7-r25",
+      "hash": "0x43f0e23bc1e57894d9de109192281ce1114b90af128792a5322b52c8b926b69f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8980304,
+        0,
+        4543943,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w0-r1",
+      "hash": "0x3e9130e03f6eff337dab7cf131193d7b66825dc42dc4bf29cb3919e4c0bf0131",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w3-r1",
+      "hash": "0xe9e315c05612268c2366b541276f94986a03c10f94f985f1a88c3ea74778670a",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w7-r1",
+      "hash": "0xd1e6d29c68fe6e74db46557056506d0172d77458dcd498d2d1939c636771e4a1",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w0-r13",
+      "hash": "0xa1ccc35a699a326e10cfe31269937c36851ec73386b569fd88fdb707c9ad2e7c",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11940965,
+        3520741,
+        5194584,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w3-r13",
+      "hash": "0x00bf48bd97241c37ebc15884095541ed1160b1bf30c8ce4a45a6d73a3621e005",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11940965,
+        3520741,
+        5194584,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w7-r13",
+      "hash": "0x850f18bb09ba71de4c694f8f0f7c1db545cdd8f38e23792732024b195ee02709",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11940965,
+        3520741,
+        5194584,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w0-r25",
+      "hash": "0xb2e25afdea30983f40718cfa71511ab00c7cf54e0383920d5b2fc4a43507a90d",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7980334,
+        2658367,
+        3623168,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w3-r25",
+      "hash": "0x8978a5f8b8583e86cc83293ac39bdc55943160895318a28ab8223fae23e7fdba",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7980334,
+        2658367,
+        3623168,
+        0
+      ]
+    },
+    {
+      "sp_id": "s8-w7-r25",
+      "hash": "0x9f1c541a805163a8c9096f937595a9aef3868aefde5b224243b60ca86f24bf5f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7980334,
+        2658367,
+        3623168,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w1-r1",
+      "hash": "0x5e231347f54166cfd57c70e0e4350994ca26aa3bcd4c3e6a9756c6e2f46a9543",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w2-r1",
+      "hash": "0xfb96a15577c52d22a7270b0728e2635872fef9c66d5e3a0c0afb359532a4e2ac",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w3-r1",
+      "hash": "0x992f6e419a90c882331cd32b5b47a1c1c954e39e377bbd9d158a807f1ac4136b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w6-r1",
+      "hash": "0xf7a01c41873d322daa8449c1ea67243274855c61b272f8c1bef928dc07504a1c",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w1-r13",
+      "hash": "0xfdb4140d072c1f7ae0a301db7311d1289990c83032b49faf69e097db0c3b766e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10533105,
+        2068032,
+        5128229,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w2-r13",
+      "hash": "0x4afac553c810968664a594b252602a3a8a4de5c00114598eab6d3666eb4e73a4",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10533105,
+        2068032,
+        5128229,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w3-r13",
+      "hash": "0x86adfd7ff98b6ca6557ca0347922126482fb6cb06c44bad02626c65777a52a05",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10533105,
+        2068032,
+        5128229,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w6-r13",
+      "hash": "0x37375d628f20d61514778db5aa20eefb4ade9a9683d256d2a6668dca72c821c4",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10533105,
+        2068032,
+        5128229,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w1-r25",
+      "hash": "0x3f907ba29f7014ad30ab52cc586cafb4aaf864284924a53a196a28eba6799213",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8782733,
+        1370397,
+        1681089,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w2-r25",
+      "hash": "0x47c2663f8b1ef5fcfb6f947774a2c045e1ef7e2c789af6fa275fbb09fcf76b61",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8782733,
+        1370397,
+        1681089,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w3-r25",
+      "hash": "0xa68b1abe83bd67b1810b1789524ec1ebf21aefbddfb1bc89b86a298b0e5b6132",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8782733,
+        1370397,
+        1681089,
+        0
+      ]
+    },
+    {
+      "sp_id": "s9-w6-r25",
+      "hash": "0x5ef65b23b187f253b9982f9191b07057203eb3989685ffe48d0ac8971d4be602",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8782733,
+        1370397,
+        1681089,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w0-r1",
+      "hash": "0x163fbac4c08fa5f42523c612a22cc01b829cf47aa96b5b8e04ddcda7361f3a97",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w1-r1",
+      "hash": "0x888cb5645c34e872fb4aebf65219d08cc37f771690b7886c63647c0a948d1d74",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w2-r1",
+      "hash": "0x10b24a4d07698a77a6f0529327b66132231433f34b39c810e8b39797e4a1b3ba",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w3-r1",
+      "hash": "0x14adb02148493895be60b10739cae1c21733130750247776ed5c9aa6587cc0ba",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w5-r1",
+      "hash": "0x7b8b0d788bb2591ba196860d6cc9fe5c011dd929a1ce8e59ef33746958a2e20a",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w7-r1",
+      "hash": "0x2f9321cbea31a5b738053f3fce4ac7c63fc8d24e8df0418c4e28815a860611f1",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w0-r13",
+      "hash": "0xdcc3986fe08aa120eb89356478f53529b84596432232c0a1576e82b3b41e59b0",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11701950,
+        0,
+        5827240,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w1-r13",
+      "hash": "0x741044f2189c3e9f3c3a9b44dc7f77cf2ff969d4b9c8e6dc6751a3f6ea56bd16",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11701950,
+        0,
+        5827240,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w2-r13",
+      "hash": "0xf917cb01c2005bc06503bc3ff0502957dafb0bb2eefb0fbef97326e73af51341",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11701950,
+        0,
+        5827240,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w3-r13",
+      "hash": "0xf1ebd541aa027ef975e9dbca64de5b42f74e59778a8916837cd7c057ac723eb2",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11701950,
+        0,
+        5827240,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w5-r13",
+      "hash": "0x14d37cba508fa6d5fed1990da83529a47206b07ea169705ad474d71edef99076",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11701950,
+        0,
+        5827240,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w7-r13",
+      "hash": "0xf655f7758dd7613c66f425f406d3686fd63ae7b873d60637e38aff1207f3b140",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11701950,
+        0,
+        5827240,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w0-r25",
+      "hash": "0xff454c8655939987ef0f04abe253ad104404128a9d7b1825be46606b620e00cf",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        9667477,
+        0,
+        1920451,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w1-r25",
+      "hash": "0x333ff0b545b685b6a8f451849d35abf767e7a661742ac28a31db94de6c2c7c20",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        9667477,
+        0,
+        1920451,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w2-r25",
+      "hash": "0x0afe666fbd8c70ca0b6a22b5d6c95b21e5df34516eef8b3cb0217c870ce0ef62",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        9667477,
+        0,
+        1920451,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w3-r25",
+      "hash": "0xa317da47e43ed273d366cf0b8ceb5acb76920d14a6674e44c5533dbb02024924",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        9667477,
+        0,
+        1920451,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w5-r25",
+      "hash": "0x073faf2503514b08b8a09805850df1698f77625ca4d33f4621ef20f092b4676e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        9667477,
+        0,
+        1920451,
+        0
+      ]
+    },
+    {
+      "sp_id": "s10-w7-r25",
+      "hash": "0x5dd75119ab375865194619a152e192179fd54136f3ea449df3076baf477109b8",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        9667477,
+        0,
+        1920451,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w1-r1",
+      "hash": "0x07cf9a69b4ebadfd8f928998006e14dbb95e5cc02f3f6063c88a3e054a42efbb",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w4-r1",
+      "hash": "0x791d2d8b3f51b2540c0cb7a3f7157b2a72365269b05eddf828f67b072b2e2b68",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w5-r1",
+      "hash": "0xdebba07304a89b7364480377b59bef8261af5b4b86fe956473690ebb9d28a85e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w7-r1",
+      "hash": "0x9912d40c65880941bb7d622d5ea643cb54e92af7071afa47f7fde2b45cd51564",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w1-r13",
+      "hash": "0xc97cf3a2404101a79b9baaf156e78ed0cc8b3d1a344d5686843cf5deb7cd1515",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10276517,
+        4757845,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w4-r13",
+      "hash": "0x428b6cb81893e6c98f9b49091e417f853867e437dde4327855b336eccb2f6269",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10276517,
+        4757845,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w5-r13",
+      "hash": "0x43250adf1117fb6b044fee3ee31969179409aaecbdd129a87f6587bb5ea1073f",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10276517,
+        4757845,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w7-r13",
+      "hash": "0x0e7996a0100e5b33d6957b8e0dd8638e37e69341d106edb1566d3ad07991b229",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10276517,
+        4757845,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w1-r25",
+      "hash": "0x1ba1f5c7b29d2ebea105922c3ac5e8853bbbf3479327d02281d0a8b9e3bf3355",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8623111,
+        2359837,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w4-r25",
+      "hash": "0x7ad1b5b8274d370e420c05de6932bb63015275ada6dfac00142b6f96b4888c25",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8623111,
+        2359837,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w5-r25",
+      "hash": "0x1713eb530081442932e60b4e9596f1806a9407f0a29c521fcd8c284360707926",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8623111,
+        2359837,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s11-w7-r25",
+      "hash": "0x2de84b9966f884632d982ce5ce630f59334794c9dcb22afba1f44a6b9dbd981e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8623111,
+        2359837,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w1-r1",
+      "hash": "0x9734d6ee21c95a173d048faf55c93b6ab523390f7f19dcfcb4948dc0babdba71",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w2-r1",
+      "hash": "0x7a92589c884fec0138a6bd0be3e8c3c46b3b439f11d9b592f24de1ee2e48abc7",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w3-r1",
+      "hash": "0x5d948934c119fea1a2612251c74f9e10f74b0e0073f302dfe20dfe7dfbcefad4",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w4-r1",
+      "hash": "0x311e54c8ceaa75471b8ce9e7070c491a8a22e835c22e916d6918c49d99711c63",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w5-r1",
+      "hash": "0x2622c1756df559cf9044db61a5ba562d13e926b2fbacbca51d67afe2a6dbb62a",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w7-r1",
+      "hash": "0xf70a50170f5ac687b142c39bed6a49cfeb226d5fcc5bb1c5c4e6062b9586b202",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w1-r13",
+      "hash": "0xfcad1ddb394d03e1b4d50938b67b8a12647da8c66c60337af017b8cde24c0f24",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11173076,
+        2391644,
+        5744308,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w2-r13",
+      "hash": "0x38275daae11200d940ee4a903353a4660d1d9fae58ed08a546ad6fabcfc80d1d",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11173076,
+        2391644,
+        5744308,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w3-r13",
+      "hash": "0x54e76537914625cce9bcd55181203d55f31bcab0ea123bf1e4ba69a692592331",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11173076,
+        2391644,
+        5744308,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w4-r13",
+      "hash": "0x6723645481a0e76b830e7d165d41f22cb53bb713f1c52d7cb42a440fa0a5be42",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11173076,
+        2391644,
+        5744308,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w5-r13",
+      "hash": "0x19d6402cc5da3af8b6cb61b090a6cdb6c9395221f3a557c0903511e9cb26ddb4",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        11173076,
+        2391644,
+        5744308,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w7-r13",
+      "hash": "0x3975f4be02b53a814025faf9c82351cb8164bfa78ae8c3ea4c9c96b6c15a8c1f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11173076,
+        2391644,
+        5744308,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w1-r25",
+      "hash": "0xc1c85eb49b35fa10b4c3c72b123f7f372f3c7313d8d028bdbf7953d62e58b4e0",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8855532,
+        1750347,
+        2652629,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w2-r25",
+      "hash": "0x8cba0baaa87c337ca501505cf980ec3c927c9f82faa951321d6376637086fd4f",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8855532,
+        1750347,
+        2652629,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w3-r25",
+      "hash": "0xbb5efead9ff60857959198bac772db60931ed0cc180be13c8fe3dc7bf727a4a4",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8855532,
+        1750347,
+        2652629,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w4-r25",
+      "hash": "0xc976eae82cf5bfbe64d744a9a095c4109f911c96ab23bd970adfe5857ed2de38",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8855532,
+        1750347,
+        2652629,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w5-r25",
+      "hash": "0xbcebd8f617977bf968b26b27d36747b42a77a42e8532d16dd45f9d354b042bbe",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8855532,
+        1750347,
+        2652629,
+        0
+      ]
+    },
+    {
+      "sp_id": "s12-w7-r25",
+      "hash": "0xca496c5dc4b377e43560c0db588ae8b8baf2b9dc6a726d523d0f27076a4441de",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8855532,
+        1750347,
+        2652629,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w0-r1",
+      "hash": "0xd5ff31a88d6730f70f755943d2fd4afdb30fbde5c70a4e7efd35fb2c31b97d1b",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w2-r1",
+      "hash": "0xc62e6cb6283eeeb1fe4190ea0f844d9e006fdb1ce30f19c6f5ef184e02af0517",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w3-r1",
+      "hash": "0xdf227c0b672c47179fbb65435c205ef65ecbf7dfab26543d603abb3d3dbeac8c",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w5-r1",
+      "hash": "0x21f17cf10736771d5b6db41a19c6305d1b1899eac47c049a85279bd19007a094",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w6-r1",
+      "hash": "0x334176b73195f4d49a4f765ca80cce6e8195e08ce3da1f0b1cd2805f1c2a2bbf",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w7-r1",
+      "hash": "0xd900dfc09d2a49ea3767f75ee979f8a49597412e78cc5352cec27e9580676460",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w0-r13",
+      "hash": "0x3a07e99cdd3b9a5925ce99b6328d233250eb08455312f390e2fb977e3f69e6ee",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12347585,
+        4197897,
+        5948626,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w2-r13",
+      "hash": "0xbf98c6051c55534b6a793c85a651fdaf5c4db230e602290e3b69189e2b7aaf74",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12347585,
+        4197897,
+        5948626,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w3-r13",
+      "hash": "0x0e751c982e281523d1849f5ac9d68cf9298cc88ccfe86b5baba29d6e47ce0a24",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12347585,
+        4197897,
+        5948626,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w5-r13",
+      "hash": "0x3a01846e00a4a6c67c7e341447322b7f8c7f83bfc418da406a3156ef1db7ff7e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12347585,
+        4197897,
+        5948626,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w6-r13",
+      "hash": "0x9a1b8d348146609bed1db0db058f9a30eef1fefcb92dfd7a0c20c67a581fc2e6",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12347585,
+        4197897,
+        5948626,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w7-r13",
+      "hash": "0x211ff402d59c24935d0d43d8c3e71bb49d139a03f5508a17f5a084262362d1d7",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12347585,
+        4197897,
+        5948626,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w0-r25",
+      "hash": "0x0781d4eeb23a8e05916d98065b48de64255082cdf839b0765c004a80e98c5c9c",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        14135938,
+        0,
+        773325,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w2-r25",
+      "hash": "0x74247c83d164969c783859b49414a243053b448e216769fa257f83766dfeb02c",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        14135938,
+        0,
+        773325,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w3-r25",
+      "hash": "0x949f4ea5f3097f594cee05ac00d0a5fd6d79a838745a88c842c49cd9ed1e682f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        14135938,
+        0,
+        773325,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w5-r25",
+      "hash": "0xed91ca660646acbcb4006a0d50876b57a9fc5f2eb3c3638e04f6273e5bcbd92d",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        14135938,
+        0,
+        773325,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w6-r25",
+      "hash": "0x5896b6fc0a91be76d7d905a1bb4cfd9938ec76949de1b2b0690a4102adfc36a3",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        14135938,
+        0,
+        773325,
+        0
+      ]
+    },
+    {
+      "sp_id": "s13-w7-r25",
+      "hash": "0x968e74a28ac785a9eba1ab73972638b04cce41294bf40f290e65b69e26be7dcd",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        14135938,
+        0,
+        773325,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w0-r1",
+      "hash": "0x9d0c80b5675f66ce355c1ca4ad835e7b9ffec0e88609030d40a8ba6ae8e2c9b5",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w1-r1",
+      "hash": "0x2fb7679b80149d9b6fa6a2c8790b3c90c25fd36370c05ff3a4233f0306ed8d08",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w3-r1",
+      "hash": "0xf251c7b3e8511594ca327efe65a7a68c502f93a7c34bc8fb1ab2f91fd06ee411",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w5-r1",
+      "hash": "0xe2ea8d884c81b7da1e6f1792b934e3f6dfcb62d5b570730bba353567ee50ffe0",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w6-r1",
+      "hash": "0x1bedb9a899415abe43f38a8ebfe7cc8551dbe8699218032e6e4379ce143fd805",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w7-r1",
+      "hash": "0xb559e4c569b10bd2470d35e3f35d709231a2f1cad209f84ebd0b0b0530e30193",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w0-r13",
+      "hash": "0xee569631c3e7515ff8389f83b9f7d21bd1aca435cb60b8d9373dbe58e5cd31be",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8005622,
+        2805811,
+        5122342,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w1-r13",
+      "hash": "0x5ee813cbf71b6b0d934bf5c5fdbbf554dbc21ab1db4c2503e22487e49fe901f7",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8005622,
+        2805811,
+        5122342,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w3-r13",
+      "hash": "0xfe5c29a171b60b41c83b7cbda391593f5ebeea8b0a5958f1e8fb6b47774f0ad3",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8005622,
+        2805811,
+        5122342,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w5-r13",
+      "hash": "0x6df12ffffbfeaba6613afda2d71e0f9d6a1c32271e2bbde3343a24415dea2959",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8005622,
+        2805811,
+        5122342,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w6-r13",
+      "hash": "0x936f0ad8dee95e8143ccdd971286857344a561158445aacfbab3a62305a47fcc",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8005622,
+        2805811,
+        5122342,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w7-r13",
+      "hash": "0x88cdf64efe3e68e0b7cccef780e1538be9806b6fe99ccec34a3bc20589132007",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8005622,
+        2805811,
+        5122342,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w0-r25",
+      "hash": "0xe8995cb0fafa9c8e969818dda0e80de70f9d837eddd0797ce75ef1d1d85d79be",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8107924,
+        1749260,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w1-r25",
+      "hash": "0x804f81e8916e311e06688ee25bcdcf0828b1ce8ee5c00cc613cf0eb6f6961548",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8107924,
+        1749260,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w3-r25",
+      "hash": "0x6f7935afba43065ace60aeca59c142cf03535c565a4d9efe4767777b8fbd63e6",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8107924,
+        1749260,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w5-r25",
+      "hash": "0xa5b3118e1866cf5cfc8653ce54cd6cbe0e35fa3b27efd91af6abe3f0f2683020",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8107924,
+        1749260,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w6-r25",
+      "hash": "0x7832ed5541d0638422f6b7ee6d27559681751a8ae32c50e59d85d1334154891d",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8107924,
+        1749260,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s14-w7-r25",
+      "hash": "0xccb0cde47a8180f7a002b29b6860dcdc7b19a0d8cfbd013d5dff36879fe803ac",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8107924,
+        1749260,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w0-r1",
+      "hash": "0xd494c86ac58b98ef89801263a9362d2280c82149b14c86717ce49192e57f6a32",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w1-r1",
+      "hash": "0x8b97b77c1729ba7972fb31bd4f4d86dc10109818c466aa63e70970acbd89211f",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w2-r1",
+      "hash": "0xf501e1bcacbab9468be075fdeab1598fa909095e29fffb8d1b66ecef5c5414dc",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w3-r1",
+      "hash": "0xaf76a87b912d510d81c0ac6d7642d59475fb903cfd2139b94427cc35af76a133",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w4-r1",
+      "hash": "0x82ec8287bd0c94241a0d4f89f9a3ac92dffe1bc684ce7d5a89f28566cf88d3a7",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w5-r1",
+      "hash": "0x76d2fc53842a14d1e7bdd4201760dd930a3b9449788bd248394373bed3bdf52d",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w7-r1",
+      "hash": "0x19cb6fd16c6e65c1cd828d1fbc3e6cfab3d64f6b1476ed397f0a34f2f15dd398",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w0-r13",
+      "hash": "0x5478c5da1c81ea1035246039d4b17208f6444abf1a31d73120bb54c270fe6bd9",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10504151,
+        2020262,
+        5197808,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w1-r13",
+      "hash": "0x335ed104d81c62de36bcd3545418cf89d0c13b2edb09029251eddab209b5b01e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10504151,
+        2020262,
+        5197808,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w2-r13",
+      "hash": "0x6ce3bb41e142497c424b2a8d01898c253eff66a86fa51f9f4d0017baebe7069a",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10504151,
+        2020262,
+        5197808,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w3-r13",
+      "hash": "0x54543afff7db1472ac1af0cc868c0f65f3e7dcd52fcbbf5a42234b132c73b416",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10504151,
+        2020262,
+        5197808,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w4-r13",
+      "hash": "0xe4b4a0f7c27685b244eafc5406b21601ab7b5078e8fa0ded6facb6b5732fa0ad",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10504151,
+        2020262,
+        5197808,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w5-r13",
+      "hash": "0x5e2a15c57db35e12ab3655d7668b6141297e538762396b05403d2633a1af65ba",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10504151,
+        2020262,
+        5197808,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w7-r13",
+      "hash": "0xf4f598980b2e42f70ce12a3fdba9a3d9f507850a195fb8e7856b1e00b3b2106f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        10504151,
+        2020262,
+        5197808,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w0-r25",
+      "hash": "0xb98704110d74f0bec59b4fa93449e73768c6e80ac30a12c7ce51f0cae206a63b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10825626,
+        774010,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w1-r25",
+      "hash": "0x572007db18ed453ff3e6ddb226b9acbd49a27fcd9f6a210ee021a9ae16194614",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10825626,
+        774010,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w2-r25",
+      "hash": "0x9bd2050efa6a5ee14184195fe031b9d50fca425959e8039d7ed7c0e3b0b8fdc1",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10825626,
+        774010,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w3-r25",
+      "hash": "0x9d02ada1aec1483cbd40e11505e1912f7397adb138485a4e3e954c2d7a589618",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10825626,
+        774010,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w4-r25",
+      "hash": "0x7a47d1550af940dc54b5057dcba7c3cafd212c12ea555111949f5f4a2045ae45",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        10825626,
+        774010,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w5-r25",
+      "hash": "0x7b167f6358228c8c78a3cd51b3e2c4230e1fefbd957b8fc2e8b01280c173a99e",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        10825626,
+        774010,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s15-w7-r25",
+      "hash": "0xd9a82e0d058260453040dc532c5ffc6d532a748afbd4833b7fcfffe325f81374",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        10825626,
+        774010,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w0-r1",
+      "hash": "0x6c37bd3d3918ff34e2c623c75205394456d4b4bb8ca826eb3ffa96dbb27a7bc0",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w1-r1",
+      "hash": "0x6e9a3719f5355295292535771880e2b18e4b2311c864a50c48b7c79c5e29423d",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w3-r1",
+      "hash": "0x6d9095b15cd7b2bf7c9e2f17c7f8bfd9e805acc6b682f683b9f91453ac7a259e",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w4-r1",
+      "hash": "0x33562f6bef23bcfb3eaef81b992b16719ac61370e7d4fda2faf9d6a14f025b74",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w5-r1",
+      "hash": "0x5b4cc76a11c7e2fa224122e34f43db0f53a19ebf984db3674940228058e76c55",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w6-r1",
+      "hash": "0x176dbd1f3eebd2816ada793bfcccc98ed3b3e90be02a5432ec5592c52c9389f1",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w7-r1",
+      "hash": "0xed30b286ede73e8627bcf4eaac4b654f9c67c9788e09a143440733239fdee66b",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w0-r13",
+      "hash": "0x9cd1ac0c774ca839a4f1ee86c48770bfe7abb19811220a24e12ce29af3f41b8f",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8664485,
+        5446744,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w1-r13",
+      "hash": "0xfa9e6402559d9a898494d1bdaeb337c4a7b0429a81fc315068a8dfa589d5e78e",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8664485,
+        5446744,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w3-r13",
+      "hash": "0x99328d8d64de124e7840e2f91f36457029477c41ec7bbac056d325700762b2be",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8664485,
+        5446744,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w4-r13",
+      "hash": "0x0414d435ec5858c18564e4a8d71bfd8ae400239f2fdf3ef39563e1ee54ac25e0",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8664485,
+        5446744,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w5-r13",
+      "hash": "0xbd5ba2cde5f61f1493c8ce60d1a68b91fbf26614b2727bd6e43c516360bb4bdb",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8664485,
+        5446744,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w6-r13",
+      "hash": "0x48a536cdee970a9fbd70f2ec4480f4bff51a7bc788aaf662137343b480f54135",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8664485,
+        5446744,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w7-r13",
+      "hash": "0xfb866f7cd7b72222d0b4fd71b4172bb29a759a0cd5b02b99926ff9e319a924bc",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8664485,
+        5446744,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w0-r25",
+      "hash": "0xdc3c6c8ab9d719fc61f6006f720f005d7f0de6a1ba4e4da90c523ecbbd9a30c8",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7622455,
+        1604925,
+        205095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w1-r25",
+      "hash": "0xda9f7d3df68b5cd8d1b13f6842dabaa03ba4f53fe46bb2f80aafc00b09cfd5da",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7622455,
+        1604925,
+        205095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w3-r25",
+      "hash": "0xc4a8367236364268d8574d1f9519848bb4a541711b17707599b89c18cab5f615",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7622455,
+        1604925,
+        205095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w4-r25",
+      "hash": "0x6ef34a7f9344dea04320a950f7ff901966341c2424737bd15ba226cb37cb4fb2",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7622455,
+        1604925,
+        205095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w5-r25",
+      "hash": "0x94734dcf71c68cde9b5e6e5b8985adc9b34afee242ace7a8bf851a0e586317cb",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7622455,
+        1604925,
+        205095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w6-r25",
+      "hash": "0x03c5b67c986a5433d047ed713447eef55c89914d8d1990129ecd6c252773af7f",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7622455,
+        1604925,
+        205095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s16-w7-r25",
+      "hash": "0x13a66752d75b9e095b8907d3d31f621d8fb741df9acc4832507cada83c8a8312",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7622455,
+        1604925,
+        205095,
+        0
+      ]
+    },
+    {
+      "sp_id": "s17-w2-r1",
+      "hash": "0xe62d13d7e052d0f63345d92eb69e73b01f3538414898416c61997e5c9ef8cd7c",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s17-w5-r1",
+      "hash": "0x3e5bc2fcfacbcf8270aa759a9c417736dc9a15bec6d2482c41c410442ebaef7f",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s17-w2-r13",
+      "hash": "0xa99d433b9c7052559307751bdf237fd1f8bf4e9dd4fd1932f6b0f79acd9fda84",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        11632895,
+        2236753,
+        5405654,
+        0
+      ]
+    },
+    {
+      "sp_id": "s17-w5-r13",
+      "hash": "0xa9d91b2bcc1c109bf1036b46bbe9846fc673ea083639857cfeb9d7d38c1c6b60",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        11632895,
+        2236753,
+        5405654,
+        0
+      ]
+    },
+    {
+      "sp_id": "s17-w2-r25",
+      "hash": "0x4ff67cead24e18ee50150c76562b37f2ad549e3253de6ca8b39ab2772c03c8bf",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8654132,
+        555848,
+        1532624,
+        0
+      ]
+    },
+    {
+      "sp_id": "s17-w5-r25",
+      "hash": "0x510aebb41ca4b22958fa980facd98a7ea9991967f1d754721ccf65c3b48c9b3f",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8654132,
+        555848,
+        1532624,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w0-r1",
+      "hash": "0xfb25de5e91e15019ae53170ee6ddd984e6c4ebaf75098a986b3ce74d7c6c268b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w1-r1",
+      "hash": "0x9342484fb602158db5d67ecc35704cb45b5ce24567bb893d5b4aa56824296a66",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w2-r1",
+      "hash": "0x571031076389b86af416705b5fdafe8bac75886c5045054e29cf1720906b6584",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w3-r1",
+      "hash": "0x95e8e182b7bae34ddb27bba2e25506e28951e11782bc9291d98bf976c0ffd0db",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w0-r13",
+      "hash": "0xbd708e2030abde9133f3e3f21d3719bf63098bbdcdbb7090204e9910cbd2f524",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12227074,
+        2816057,
+        5698933,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w1-r13",
+      "hash": "0x90866b3fbede02a6fceffab195e1c6c6c6bea8359cae8a369c386da0d47ed89e",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        12227074,
+        2816057,
+        5698933,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w2-r13",
+      "hash": "0xe13ac34bc039c4850ee6358e2cd00878109203dab3b1897cd06b14ebd78237a4",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        12227074,
+        2816057,
+        5698933,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w3-r13",
+      "hash": "0x564bcedef71135ab2f749f63404f3b52deddb2418ab26b72aff7ba34e11d0ea9",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        12227074,
+        2816057,
+        5698933,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w0-r25",
+      "hash": "0x5b42a3c66290582dbc9e75d14188658f659da7d2420c64e127caeea82163cbbe",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8969377,
+        0,
+        2455876,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w1-r25",
+      "hash": "0x2f57fe4f1dfe24c4839021348a54b9f9acfc44629e099ca64528ad572e4693a9",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8969377,
+        0,
+        2455876,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w2-r25",
+      "hash": "0x3a24d71ca2a0d6f76cf24609d44c7d8729d41a1a7cf06a6eca0422be79ea5c27",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8969377,
+        0,
+        2455876,
+        0
+      ]
+    },
+    {
+      "sp_id": "s18-w3-r25",
+      "hash": "0x1e112a1f4fd31683436b721138f2d2ac6694230e4f5987cf88a8e9aad551a299",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8969377,
+        0,
+        2455876,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w0-r1",
+      "hash": "0x776fa1d70736e4187b4e753402346ea621a8ad4ea23e6f2bdbf6a0728126b366",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w1-r1",
+      "hash": "0x10f34b6f5c4106808c9dda5815a552a5015e20221f269c897a755301a11fd189",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w2-r1",
+      "hash": "0x10fd36fa293c6259a8c884bef5917341f34a4e15df8ec3de4c4072a2a82c8e6b",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w5-r1",
+      "hash": "0x54e60063ce373f6e5646fb6377fc289da6565b803eff50d2be89c4a326064db9",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w6-r1",
+      "hash": "0x51f3241b85998b79eba38247e2e50970b4c8e5d453655580c400fad53e74ecce",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w7-r1",
+      "hash": "0x50c766ec26b6cf21e63977e3e0adf3c118afa88cd45b862fd0b75fbe1a7fddb0",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w0-r13",
+      "hash": "0x514f4c5768666c19c39f943ab6561aaa43adc57aa0f070072a6ab4b73ab96996",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8105815,
+        3894535,
+        4960641,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w1-r13",
+      "hash": "0x147337ae3624089288f4a9cf8dfd4f23df3886b3ee0d7b6d0a2d13d07dd05cb3",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8105815,
+        3894535,
+        4960641,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w2-r13",
+      "hash": "0xc3ff3770ee9e6cbe275cfd1d1986afa72324521a5762cea703b3b7b16754daca",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8105815,
+        3894535,
+        4960641,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w5-r13",
+      "hash": "0x076b397cf24f7da046ee9ae665f1ce7b39f4fbf33594c1b3f8f72afe5382215d",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        8105815,
+        3894535,
+        4960641,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w6-r13",
+      "hash": "0x2cbad88bbf804a8e7466b81b65da50558b211ad08b98106969cd39ecb5ab3494",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        8105815,
+        3894535,
+        4960641,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w7-r13",
+      "hash": "0x2756a600b63620f29820e5418a4eb34a8630544e6e2896e2a9b0967c8c34efb7",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        8105815,
+        3894535,
+        4960641,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w0-r25",
+      "hash": "0x2648f1d94e3932f4d394d4d70faf7265bb638aed76b50f75fc2cfc5126be72d8",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7324335,
+        2316408,
+        671091,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w1-r25",
+      "hash": "0xcb0b116f979bfb40acfb9a0c94159a2195d1fd0af11347b1b27ea109e17dee39",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7324335,
+        2316408,
+        671091,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w2-r25",
+      "hash": "0x4f4fb41440eeec07f80c1dee527d4e1b53d40f02f513fb6ebb99daf4e096bb93",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7324335,
+        2316408,
+        671091,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w5-r25",
+      "hash": "0xa0da810ab254394f7ff28c89656c014a47bbb1077ef94788f3a788580afba5fa",
+      "tasks": 4,
+      "qubits": 16,
+      "states": 256,
+      "lam": [
+        7324335,
+        2316408,
+        671091,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w6-r25",
+      "hash": "0x3c6690ee1e63607079d74e80035bc05f85f2b94c0b82759add5b063b15660994",
+      "tasks": 3,
+      "qubits": 12,
+      "states": 64,
+      "lam": [
+        7324335,
+        2316408,
+        671091,
+        0
+      ]
+    },
+    {
+      "sp_id": "s19-w7-r25",
+      "hash": "0xf7a154b3bae4c19ce7f2aefe280a23ef49998758085e852595102382ba067ea4",
+      "tasks": 5,
+      "qubits": 20,
+      "states": 1024,
+      "lam": [
+        7324335,
+        2316408,
+        671091,
+        0
+      ]
+    }
+  ],
+  "tuning_subproblems": [
+    {
+      "sp_id": "s100-w0-r1",
+      "hash": "0xf2c60db2a545410afcb4d8e1428a3707e21f6c8320f0ed9518b3e3dc00f765ae"
+    },
+    {
+      "sp_id": "s100-w1-r1",
+      "hash": "0x97f5584349c163ae68d0b65a232f27254f37bc93721f303850d39e8a9c524916"
+    },
+    {
+      "sp_id": "s100-w2-r1",
+      "hash": "0xbff8fd4e2c113d9b94373e5456e3e340282c36436f48e1c875428b035fbe9084"
+    },
+    {
+      "sp_id": "s100-w3-r1",
+      "hash": "0x464dceac2829bddb920e8aecc3aa06ebf9fbd6e76188cd8fd4f4f99ea2c2c43d"
+    },
+    {
+      "sp_id": "s100-w5-r1",
+      "hash": "0xf2fdfdfae223f2d24b85e684f19b557e3304539ad9ea05c183956ff5b129ae43"
+    },
+    {
+      "sp_id": "s100-w6-r1",
+      "hash": "0xec8e0e2714ee8134e6fa4f91221eda380ec9df86ab4969aa884f732ac83f9ac3"
+    },
+    {
+      "sp_id": "s100-w7-r1",
+      "hash": "0x8d8d5d61273fff3055b4db4205c250b9d6a7c0c111d1851dec3969b7795e483a"
+    },
+    {
+      "sp_id": "s100-w0-r13",
+      "hash": "0x6256b1fa92ecf555a58e4ae34adc017e38ba7829887a29422c233f6db2399576"
+    },
+    {
+      "sp_id": "s100-w1-r13",
+      "hash": "0xca021eeeacc425e352bc096a877b7db1912d329600861bf139b707add726b00a"
+    },
+    {
+      "sp_id": "s100-w2-r13",
+      "hash": "0x0e9787198ba5461b9ff1293c786d4b43fdf9e7ec76cfe3bc30a9d02208da4573"
+    },
+    {
+      "sp_id": "s100-w3-r13",
+      "hash": "0x27dea3be281e41eef15c8e15450d0ede061a556c2d56980e6711ba482ba2435f"
+    },
+    {
+      "sp_id": "s100-w5-r13",
+      "hash": "0x0f51bef97b2f9ee9a94fc957014b805f8f2f5c89798bdf2d8037e034eebee3ca"
+    },
+    {
+      "sp_id": "s100-w6-r13",
+      "hash": "0x013638a846b7bdfdb544d7758997ea3a2e15201e8127a5d476bb965696cd8886"
+    },
+    {
+      "sp_id": "s100-w7-r13",
+      "hash": "0x3551ff6cbc0cb5d1da1f188a06f73ac80cbb0293a2b139b778f49569d4c5e57c"
+    },
+    {
+      "sp_id": "s100-w0-r25",
+      "hash": "0x5957a5a0fd6b74bcfb328f0a8ff641338283ac0f83ce205f2e797a1a1a51fbf2"
+    },
+    {
+      "sp_id": "s100-w1-r25",
+      "hash": "0xbf40703ffac01de69f390a2bbad8051e96e92797c7fcd4defea70e215cccc1d8"
+    },
+    {
+      "sp_id": "s100-w2-r25",
+      "hash": "0x47e6027fcae7c0d91cfc9efeed60b845cadadb8817149a367fc970f07b14bb49"
+    },
+    {
+      "sp_id": "s100-w3-r25",
+      "hash": "0xcafc07a3174c44977e8bc6989329448b752176e34f4f65192528d7ed23aaefe9"
+    },
+    {
+      "sp_id": "s100-w5-r25",
+      "hash": "0x22be3f755740877569e6102270f06cd430f2ab516a34d7cc6b6d0bf80f83e269"
+    },
+    {
+      "sp_id": "s100-w6-r25",
+      "hash": "0x0d1f6333447f4c01d2650795c39e2b553b4f233c49243459973bfa99f498580c"
+    },
+    {
+      "sp_id": "s100-w7-r25",
+      "hash": "0x32e7eb8a57d6cebdf7279531424f01bb23400d0280b5019a58eb08ff9e7c8455"
+    },
+    {
+      "sp_id": "s101-w0-r1",
+      "hash": "0xcd8bf25e0e41b1e7bb1d73285b64c1ba90d3942303d10f536b65f976a49e4b7f"
+    },
+    {
+      "sp_id": "s101-w4-r1",
+      "hash": "0xac6be4abb3210476ef25d0c30283839da289e304947da5ffae5426ca2cba029f"
+    },
+    {
+      "sp_id": "s101-w5-r1",
+      "hash": "0xc3e5477addc77b99f04e4a1578d9393a0850da23551a959d7f8868204770fb10"
+    },
+    {
+      "sp_id": "s101-w6-r1",
+      "hash": "0x9a943843990b5d838200a23c9068c72077d6755ebf3ebea585a6afedee2ffcec"
+    },
+    {
+      "sp_id": "s101-w7-r1",
+      "hash": "0x0b2a7a1c993451acfc90627cd73153b67b7fbc22721e59fefeeec9eb93a0c8fe"
+    },
+    {
+      "sp_id": "s101-w0-r13",
+      "hash": "0x117312d253d142673b865ea82556230c15b7c731f2582e1cc8374097a1201b77"
+    },
+    {
+      "sp_id": "s101-w4-r13",
+      "hash": "0x5319f711fedff5bd6cd919af72bb65cb55fc83d5418992dba423e12e94a144e9"
+    },
+    {
+      "sp_id": "s101-w5-r13",
+      "hash": "0x020282242f94d609eba8070f815dca022e0b9b58460abb8a4f737aba2427cb19"
+    },
+    {
+      "sp_id": "s101-w6-r13",
+      "hash": "0x15dd422edc67d3cba76957fe52fc3c5a61a32f0505acfd860f0dba1a4ed540d8"
+    }
+  ],
+  "tuned_params": {
+    "random": {
+      "16": {},
+      "64": {},
+      "256": {}
+    },
+    "sa": {
+      "16": {
+        "t0": 1.0,
+        "t_end": 0.01
+      },
+      "64": {
+        "t0": 1.0,
+        "t_end": 0.1
+      },
+      "256": {
+        "t0": 4.0,
+        "t_end": 0.1
+      }
+    },
+    "sqa": {
+      "16": {
+        "replicas": 8,
+        "T": 0.05
+      },
+      "64": {
+        "replicas": 4,
+        "T": 0.05
+      },
+      "256": {
+        "replicas": 8,
+        "T": 0.05
+      }
+    },
+    "sb_ballistic": {
+      "16": {
+        "xi": 0.5,
+        "steps": 200
+      },
+      "64": {
+        "xi": 0.5,
+        "steps": 200
+      },
+      "256": {
+        "xi": 0.5,
+        "steps": 50
+      }
+    },
+    "sb_discrete": {
+      "16": {
+        "xi": 1.0,
+        "steps": 200
+      },
+      "64": {
+        "xi": 1.0,
+        "steps": 200
+      },
+      "256": {
+        "xi": 1.0,
+        "steps": 50
+      }
+    },
+    "qaoa_ring": {
+      "16": {
+        "p": 1,
+        "opt_frac": 0.5,
+        "gamma_max": 1.5
+      },
+      "64": {
+        "p": 1,
+        "opt_frac": 0.5,
+        "gamma_max": 1.5
+      },
+      "256": {
+        "p": 2,
+        "opt_frac": 0.5,
+        "gamma_max": 3.0
+      }
+    },
+    "qaoa_complete": {
+      "16": {
+        "p": 1,
+        "opt_frac": 0.5,
+        "gamma_max": 1.5
+      },
+      "64": {
+        "p": 1,
+        "opt_frac": 0.5,
+        "gamma_max": 1.5
+      },
+      "256": {
+        "p": 2,
+        "opt_frac": 0.5,
+        "gamma_max": 3.0
+      }
+    },
+    "qaoa_ring_ideal": {
+      "16": {
+        "p": 3
+      },
+      "64": {
+        "p": 2
+      },
+      "256": {
+        "p": 1
+      }
+    },
+    "qaoa_complete_ideal": {
+      "16": {
+        "p": 3
+      },
+      "64": {
+        "p": 2
+      },
+      "256": {
+        "p": 1
+      }
+    }
+  },
+  "labels": {
+    "random": "sanity baseline",
+    "sa": "classical",
+    "sqa": "quantum-inspired",
+    "sb_ballistic": "quantum-inspired",
+    "sb_discrete": "quantum-inspired",
+    "qaoa_ring": "quantum algorithm, classically simulated",
+    "qaoa_complete": "quantum algorithm, classically simulated",
+    "qaoa_ring_ideal": "quantum algorithm, classically simulated (ideal angles: optimistic upper bound)",
+    "qaoa_complete_ideal": "quantum algorithm, classically simulated (ideal angles: optimistic upper bound)"
+  },
+  "environment": {
+    "python": "3.12.15",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "workers": 4
+  }
+}

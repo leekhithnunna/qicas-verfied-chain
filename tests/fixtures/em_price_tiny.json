@@ -1,0 +1,5 @@
+{"zone": "XX-TEST", "temporalGranularity": "hourly", "data": [
+ {"zone": "XX-TEST", "datetime": "2030-01-02T11:00:00.000Z", "value": 20.5, "unit": "USD/MWh", "source": null},
+ {"zone": "XX-TEST", "datetime": "2030-01-02T12:00:00.000Z", "value": 21.8, "unit": "USD/MWh", "source": "synthetic"},
+ {"zone": "XX-TEST", "datetime": "2030-01-02T13:00:00.000Z", "value": 999.0, "unit": "USD/MWh", "source": null}
+]}

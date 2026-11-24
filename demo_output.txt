@@ -1,0 +1,23 @@
+﻿====================================================================================================
+QICAS case-study demo: quantum-inspired, verifiable, carbon-aware scheduling
+====================================================================================================
+[1] Instance: 39 tasks in 8 DAG workflows, 36 data edges, 4 regions; hash 0x8fd313741e4cc3d2ΓÇª
+[2] baseline (round-robin)   score= 1,458,546,200  carbon=    961.8 g  cost=$0.4968  feasible=True  (baseline, 0.00s)
+[2] greedy                   score=   872,431,150  carbon=    627.5 g  cost=$0.2449  feasible=True  (classical, 0.00s)
+[2] sa                       score=   758,638,650  carbon=    542.8 g  cost=$0.2159  feasible=True  (classical, 0.04s)
+[2] sqa                      score=   730,160,300  carbon=    552.7 g  cost=$0.1774  feasible=True  (quantum-inspired, 0.21s)
+[2] dual-market              score=   709,208,800  carbon=    531.8 g  cost=$0.1774  feasible=True  (decomposition, 0.69s)
+[2] Lagrangian lower bound = 638,827,640  -> every schedule above is at most 9.9% from optimal
+[3] Contract deployed at 0xF2E246BB76DF876Cef8b38ae84130F4F55De395b; epoch 1 published. Contract-computed baseline carbon = 961.8 g (matches Python)
+[4] 7 agents committed hashed schedules with a 1 ETH stake each
+[5] reveal greedy                   -> accepted score=872,431,150
+[5] reveal sa                       -> accepted score=758,638,650
+[5] reveal sqa                      -> accepted score=730,160,300
+[5] reveal dual-market              -> accepted score=709,208,800
+[5] reveal attacker: over-capacity  -> rejected (capacity violated)
+[5] reveal attacker: copycat        -> reverted (HashMismatch)
+[5] reveal attacker: no-show        -> not revealed
+[6] Winner: dual-market. Carbon 961.8 g -> 531.8 g (44.7% lower). Chain overhead Γëê 1.8681 g. NET saving 428.0 g; 428 credits minted. Certified gap Γëñ 9.92%. Slashed from attackers: 3 ETH
+[7] Merkle proof task 0 in region 2: True; tampered claim region 3: False
+====================================================================================================
+Saved full results to results/demo_run.json

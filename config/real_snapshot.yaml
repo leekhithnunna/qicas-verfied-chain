@@ -1,0 +1,107 @@
+# ---------------------------------------------------------------------------
+# Phase 1 real-data configuration: snapshot hour 2024-10-15T12:00:00Z (UTC hour [12:00, 13:00)).
+#   python -m demo.run_demo --config config/real_snapshot.yaml
+#   python -m experiments.real_snapshot
+# config/demo.yaml (synthetic, default) is unchanged.
+#
+# Committed here: ONLY the derived snapshot inputs (one carbon intensity and one price per region, for one hour),
+# with citations. Raw files are git-ignored under data/raw/ (licences: docs/DATA_SOURCES.md). Electricity Maps
+# data is used under an academic licence (no redistribution). The workload file is a local, regenerable extract
+# of the Alibaba trace (scripts/load_alibaba_dags.py); it is not committed.
+#
+# Citations:
+#   Electricity Maps (2026). Carbon intensity data, 2024 hourly, zones SE-SE3, IE, US-MIDA-PJM, IN-WE,
+#     dataset version 2026-02-10. https://www.electricitymaps.com
+#   Electricity Maps API, day-ahead price US-MIDA-PJM, accessed 2026-11-23
+#   ENTSO-E Transparency Platform, Energy Prices [12.1.D], SE3 and IE(SEM), 2024-10-15
+#   IEX India, Day-Ahead Market snapshot, 2024-10-15
+#   ECB euro reference exchange rates, 2024-10-15
+#   Alibaba Cluster Trace Program, cluster-trace-v2018
+# ---------------------------------------------------------------------------
+seed: 7
+workflows: 8                         # informational: the workload file fixes the tasks
+tasks_per_workflow: [3, 7]           # loader limits (<= 7: the market solves each workflow exactly)
+cpu_range: [1, 4]                    # loader drops jobs with any task > 4 cores
+duration_h_range: [0.5, 3.0]         # unused with a file workload (durations come from the trace)
+watts_per_core: 12                   # ILLUSTRATIVE power model (same as demo); energy = cores x duration x W
+volume_mb_lognormal: [6.0, 1.0]      # ESTIMATED edge volumes (the trace has no transfer sizes)
+
+workload:
+  source: file
+  path: data/processed/alibaba_dags_seed7_n8.json     # local only; regenerate: scripts/load_alibaba_dags.py
+  pattern: data/processed/alibaba_dags_seed{seed}_n8.json
+  # Decision D1 (approved 2026-11-23): a task = all its instances. cores = cpu x instance_num,
+  # energy = max(1, round(cpu x duration_s x watts_per_core x instance_num / 3600)) Wh, and each region's capacity =
+  # ceil(total cores x capacity_share) + largest task (keeps the round-robin baseline feasible).
+  # "representative" = one instance per task with the 1 Wh floor (option (c); E4 sensitivity row only).
+  task_size: instance_num
+
+# Region inputs = derived snapshot values (integers; contract units). capacity_share stays ILLUSTRATIVE.
+#   ci: Electricity Maps direct (operational) carbon intensity, rounded half-up to g/kWh.
+#   price: day-ahead price -> EUR/MWh with ECB 2024-10-15 rates -> µUSD/kWh (x 1.0903 USD/EUR x 1000).
+#   Stockholm  SE-SE3      1.2 g/kWh (measured)          ENTSO-E SE3      28.13 EUR/MWh
+#   Ireland    IE        178.94 g/kWh (EM-estimated)      ENTSO-E IE(SEM)  88.50 EUR/MWh
+#   Virginia   US-MIDA-PJM 320.46 g/kWh (measured)        EM API PJM       35.20 USD/MWh = 32.28 EUR/MWh
+#   Mumbai     IN-WE     641.72 g/kWh (EM-estimated)      IEX all-India MCP 3964.56 Rs/MWh (17:00-18:00 IST) = 43.27 EUR/MWh
+regions:
+  - {name: eu-north-1 (Stockholm), ci_g_per_kwh: 1,   price_uusd_per_kwh: 30670, capacity_share: 0.25}
+  - {name: eu-west-1 (Ireland),    ci_g_per_kwh: 179, price_uusd_per_kwh: 96492, capacity_share: 0.40}
+  - {name: us-east-1 (Virginia),   ci_g_per_kwh: 320, price_uusd_per_kwh: 35200, capacity_share: 0.45}
+  - {name: ap-south-1 (Mumbai),    ci_g_per_kwh: 642, price_uusd_per_kwh: 47178, capacity_share: 0.45}
+
+network:                             # ILLUSTRATIVE (same as demo); per-pair tables are Phase 1b
+  energy_mwh_per_mb: 30
+  egress_nusd_per_mb: 20000
+
+weights:
+  carbon: 1
+  cost: 1
+
+solvers:
+  greedy: {}
+  sa:  {sweeps: 400, t0: 2.0, t_end: 0.01}
+  sqa: {replicas: 12, sweeps: 150, T: 0.05, gamma0: 3.0, gamma_end: 0.01}
+
+market:
+  rounds: 25
+  step0: 1.0
+
+chain:
+  mode: memory
+  rpc_url: http://127.0.0.1:8545
+  stake_wei: 1000000000000000000
+  energy_wh_per_million_gas: 0.5
+  chain_ci_g_per_kwh: 400
+
+snapshot:
+  hour: "2024-10-15T12:00:00Z"
+  carbon_basis: direct
+  fx:
+    source: ECB euro reference exchange rates
+    date: "2024-10-15"
+    usd_per_eur: "1.0903"
+    inr_per_eur: "91.622"
+    path: data/raw/fx/ecb_2024-10-15.csv
+    sha256: 062214684d73882866726ae781a161862a807e157d57dda43e612ab056caa63a
+  sources:
+    eu-north-1 (Stockholm):
+      carbon: {zone: SE-SE3, path: data/raw/carbon/SE-SE3_2024_hourly.csv,
+               sha256: c0e31cca51a9aa55412c381a75fa1903dcea776d797567b18dba1b87ccbbd928}
+      price:  {kind: entsoe, area: SE3, path: data/raw/prices/entsoe_SE3_2024-10-15.csv,
+               sha256: 24244197521228deb583b1cc11ce1c0d6e4cdbd3598fd489fe8cc35d7c44cefb}
+    eu-west-1 (Ireland):
+      carbon: {zone: IE, path: data/raw/carbon/IE_2024_hourly.csv,
+               sha256: 3a6cbf671f123185491f4341be16e06e6c693bd1d547556d9b600dcc3fc17ecb}
+      price:  {kind: entsoe, area: IE(SEM), path: data/raw/prices/entsoe_IE-SEM_2024-10-15.csv,
+               sha256: 98e18c7815df467f9d661e33caf12f1ed423129c2c461c896a9e5a49b69fa53f}
+    us-east-1 (Virginia):
+      carbon: {zone: US-MIDA-PJM, path: data/raw/carbon/US-MIDA-PJM_2024_hourly.csv,
+               sha256: 79b932595ccc6afcb2e0985af105f6d6602a46fc8e0ada63a31935c466751581}
+      price:  {kind: em_json, area: US-MIDA-PJM, path: data/raw/prices/em_price_US-MIDA-PJM_2024-10-15.json,
+               sha256: f149b3d2bd53ae97c5c42fe885c170344988e53ebdf2e06d2fb7e2ebb4f4ebba}
+    ap-south-1 (Mumbai):
+      carbon: {zone: IN-WE, path: data/raw/carbon/IN-WE_2024_hourly.csv,
+               sha256: b9d7ec4715e33330a1e7bfbd53b974c14b305187b23d5c40b971f52ae065c306}
+      price:  {kind: iex_xlsx, area: all-India MCP (no W1-W3 in file), align: instant,
+               path: data/raw/prices/iex_dam_2024-10-15.xlsx,
+               sha256: 6c7a045ae47bd82ac04a979b9ddc229798cd6d19dde4d17c7b5000a6d80928a3}

@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------
+# Phase 6-lite evaluation harness (experiments/run_all.py). NOT used by the default demo.
+# Instances are generated from base_config (config/demo.yaml, read-only) with synthetic data.
+# ---------------------------------------------------------------------------
+base_config: config/demo.yaml
+# Phase 1: E4 real-data rows use this config (regions = 2024-10-15T12:00Z snapshot) and the local Alibaba samples
+# data/processed/alibaba_dags_seed{S}_n8.json (scripts/load_alibaba_dags.py). Missing files -> "NOT RUN - data missing".
+real_config: config/real_snapshot.yaml
+
+chain:
+  # In-memory chain (eth-tester / py-evm) with a RAISED block gas limit so that large instances can be
+  # measured at all; results are compared against reference_block_gas_limit afterwards.
+  measurement_block_gas_limit: 300000000
+  # Plan value (docs/plans/PHASE6_EVALUATION.md, E2). [VERIFY] against the current Ethereum mainnet limit.
+  reference_block_gas_limit: 30000000
+  # Per-tx cap of chain/client.py in the default demo (Chain.tx_gas); reported as a structural limit.
+  demo_client_tx_gas_cap: 15000000
+
+# E1 overhead grid. [VERIFY] There are NO sources for these values (decision 2, approved 2026-11-13):
+# a wide, illustrative log grid. Net-carbon results are reported only as RANGES over this grid.
+overhead_grid:
+  energy_wh_per_million_gas: [0.01, 0.1, 1, 10, 100, 1000, 10000]
+  chain_ci_g_per_kwh: [40, 400, 700]
+
+# Phase 5 E1 PoA node term = validators x node power x hours attributed per epoch x chain ci. [VERIFY]: no sources;
+# illustrative grid, results reported as ranges. 0.01 h ~ the measured Besu wall time of one demo epoch (~37 s);
+# 1 h / 24 h = one epoch per hour / per day keeping an always-on network busy.
+poa_node_term:
+  validators: 4
+  node_power_w: [5, 50, 200]          # single-board computer ... small server [VERIFY]
+  hours_per_epoch: [0.01, 1, 24]      # [VERIFY]
+
+weight_presets:                       # same three presets as the dashboard
+  carbon-priority: {carbon: 1, cost: 1}
+  balanced:        {carbon: 1, cost: 5}
+  cost-priority:   {carbon: 1, cost: 20}
+
+bootstrap:
+  n_boot: 2000
+  seed: 0
+
+profiles:
+  smoke:                              # pytest; a few seconds
+    flows:                            # E1 + E2: full case-study flow per (workflows, instance seed)
+      workflows: [2, 3]
+      inst_seeds: [0]
+    market_rounds: [5, 10]            # E1 trade-off: certified gap vs number of market rounds
+    attacks: {workflows: 3, seed: 7}  # E3
+    solvers:                          # E4 (synthetic)
+      workflows: 4
+      inst_seeds: [0, 1]
+      solver_seeds: [0, 1]
+      presets: [carbon-priority]
+      real_inst_seeds: [7]            # Phase 1 real sample(s); NOT RUN - data missing without data/
+  lite:                               # Phase 6-lite results (several minutes)
+    flows:
+      workflows: [2, 4, 8, 16, 32, 64]   # ~ 10 ... 290 tasks
+      inst_seeds: [0, 1, 2]
+    market_rounds: [5, 10, 25]
+    attacks: {workflows: 3, seed: 7}
+    solvers:
+      workflows: 8                    # default demo size (~35-40 tasks)
+      inst_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      solver_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+                     20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+      presets: [carbon-priority, balanced, cost-priority]
+      real_inst_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   # Phase 1: 10 Alibaba DAG samples x the same solver seeds

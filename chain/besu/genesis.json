@@ -1,0 +1,54 @@
+{
+  "_comment": "TEST ONLY - deterministic QICAS Phase 5 QBFT genesis (chain/besu/generate.py). Never use on a real network.",
+  "config": {
+    "chainId": 1338,
+    "berlinBlock": 0,
+    "londonBlock": 0,
+    "shanghaiTime": 0,
+    "zeroBaseFee": true,
+    "qbft": {
+      "blockperiodseconds": 2,
+      "epochlength": 30000,
+      "requesttimeoutseconds": 4
+    }
+  },
+  "nonce": "0x0",
+  "timestamp": "0x0",
+  "gasLimit": "0x1c9c380",
+  "difficulty": "0x1",
+  "mixHash": "0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365",
+  "coinbase": "0x0000000000000000000000000000000000000000",
+  "alloc": {
+    "fd4dcb43360ed0d81533b14470847fa39cd214d2": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "b819bee13a93599e4115db03cd068c1af9be4943": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "c70e8b05e1f3d5eb135451ff5f82efd6412c69a8": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "c613b14a2b96b8d5ac56b32822c14844182bdd63": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "89378ea45e3c3496f1b55d8a24ca96b25734a929": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "eb6dc0dc29f2640f02340637249fed26b52e64c0": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "1ee9744bb58dfbb41ecad03eb9a11587722a8c67": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "ecd55c664d4430d1ad84676b8dbef2067cf7a7b6": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "418f71abffc5a00f5646245639b68f8c287cfae5": {
+      "balance": "0xd3c21bcecceda1000000"
+    },
+    "784e4ec7072efb6e9d269864fbc3c062d9fa9a17": {
+      "balance": "0xd3c21bcecceda1000000"
+    }
+  },
+  "extraData": "0xf87aa00000000000000000000000000000000000000000000000000000000000000000f854943473d1e098a8d8ca54c28fd8ba19fb82ff7a4a3d9479d0ad8fc87230e9faa3cabc212ed18a9c557e9a94859c9146348b7898a63b925457ad48554d873c0894bf83bfded7428a32b897f73bb3dd5d5aaccd6b08c080c0"
+}

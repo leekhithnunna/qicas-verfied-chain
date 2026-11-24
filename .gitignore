@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Generated outputs stay ignored, except the small Phase 2 benchmark evidence files below.
+results/*
+!results/quantum/
+results/quantum/*
+!results/quantum/summary.csv
+!results/quantum/classical_vs.csv
+!results/quantum/manifest.json
+!results/quantum/tuning.json
+# Raw datasets (large / licence-restricted); provenance + download scripts are committed instead.
+/data/
+# Secrets: never commit keys or environment files.
+*.key
+.env
+.env.*
+chain/node_modules/
+chain/package-lock.json
+chain/hardhat/node_modules/
+chain/hardhat/package-lock.json
+chain/hardhat/cache/
+chain/hardhat/artifacts/
+_snapshot/
+# Report pack for the university report (scripts/make_report_pack.py); regenerated, never committed.
+/report_pack/
+/report_pack.zip

@@ -1,0 +1,8 @@
+{
+  "name": "qicas-chain-compile",
+  "private": true,
+  "description": "Reproducible solc-js compile of chain/contracts (README section 9.3, option B). Run: node chain/compile.js",
+  "devDependencies": {
+    "solc": "0.8.24"
+  }
+}

@@ -1,0 +1,151 @@
+{
+ "edges": [
+  {
+   "j": 0,
+   "k": 2,
+   "volume_mb": 312
+  },
+  {
+   "j": 1,
+   "k": 2,
+   "volume_mb": 672
+  },
+  {
+   "j": 2,
+   "k": 3,
+   "volume_mb": 321
+  },
+  {
+   "j": 4,
+   "k": 5,
+   "volume_mb": 294
+  },
+  {
+   "j": 5,
+   "k": 6,
+   "volume_mb": 159
+  },
+  {
+   "j": 8,
+   "k": 9,
+   "volume_mb": 325
+  }
+ ],
+ "meta": {
+  "duration_s": [
+   3600,
+   1800,
+   3600,
+   360,
+   1800,
+   600,
+   150,
+   360,
+   360,
+   360
+  ],
+  "energy_floor_note": "energy_wh is an integer >= 1 (contract unit); tasks below 1 Wh are raised to 1",
+  "exact_task_energy_wh": 57.4,
+  "filter_counts": {
+   "bad_task_name": 1,
+   "cycle": 1,
+   "duplicate_task": 0,
+   "eligible": 3,
+   "jobs_seen": 11,
+   "malformed_rows": 0,
+   "missing_parent": 1,
+   "no_plan_cpu": 0,
+   "non_contiguous": 0,
+   "status": 1,
+   "time": 1,
+   "too_few_tasks": 1,
+   "too_many_cores": 1,
+   "too_many_tasks": 1
+  },
+  "instance_num": [
+   2,
+   3,
+   5,
+   1,
+   1,
+   1,
+   1,
+   7,
+   1,
+   1
+  ],
+  "jobs": [
+   "j_10",
+   "j_11",
+   "j_20"
+  ],
+  "seed": 7,
+  "source": "synthetic fixture",
+  "task_size": "one representative instance per task",
+  "tasks_below_1wh": 0,
+  "volume_source": "estimated",
+  "watts_per_core": 12
+ },
+ "tasks": [
+  {
+   "cpu": 1,
+   "energy_wh": 12,
+   "name": "j_10/M1",
+   "workflow": 0
+  },
+  {
+   "cpu": 2,
+   "energy_wh": 12,
+   "name": "j_10/M2",
+   "workflow": 0
+  },
+  {
+   "cpu": 1,
+   "energy_wh": 12,
+   "name": "j_10/R3_1_2",
+   "workflow": 0
+  },
+  {
+   "cpu": 4,
+   "energy_wh": 5,
+   "name": "j_10/J4_3",
+   "workflow": 0
+  },
+  {
+   "cpu": 1,
+   "energy_wh": 6,
+   "name": "j_11/M1",
+   "workflow": 1
+  },
+  {
+   "cpu": 3,
+   "energy_wh": 6,
+   "name": "j_11/R2_1",
+   "workflow": 1
+  },
+  {
+   "cpu": 2,
+   "energy_wh": 1,
+   "name": "j_11/R3_2",
+   "workflow": 1
+  },
+  {
+   "cpu": 1,
+   "energy_wh": 1,
+   "name": "j_20/M1",
+   "workflow": 2
+  },
+  {
+   "cpu": 1,
+   "energy_wh": 1,
+   "name": "j_20/M2",
+   "workflow": 2
+  },
+  {
+   "cpu": 1,
+   "energy_wh": 1,
+   "name": "j_20/R3_2",
+   "workflow": 2
+  }
+ ]
+}

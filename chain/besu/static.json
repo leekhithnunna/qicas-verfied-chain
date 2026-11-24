@@ -1,0 +1,37 @@
+{
+  "bootnode": "enode://f87968b1e7809f6b5b5f78fbe2626af48c6cd6b8b9fa31f41d9612c3ef01b47b7fc31ea593f0d0115dff4192077196161393d45c1a479319c72efa909e91d53a@172.16.239.11:30303",
+  "validators": {
+    "validator1": {
+      "address": "0x859c9146348b7898a63B925457Ad48554d873c08",
+      "ip": "172.16.239.11",
+      "rpc": "http://127.0.0.1:8545"
+    },
+    "validator2": {
+      "address": "0x3473d1E098a8D8cA54c28FD8bA19fb82Ff7A4A3d",
+      "ip": "172.16.239.12",
+      "rpc": "http://127.0.0.1:8546"
+    },
+    "validator3": {
+      "address": "0x79d0ad8fc87230e9Faa3cABC212ED18a9c557e9A",
+      "ip": "172.16.239.13",
+      "rpc": "http://127.0.0.1:8547"
+    },
+    "validator4": {
+      "address": "0xBF83bFdED7428A32b897f73BB3DD5D5aaccd6B08",
+      "ip": "172.16.239.14",
+      "rpc": "http://127.0.0.1:8548"
+    }
+  },
+  "accounts": [
+    "0xfd4Dcb43360eD0d81533b14470847fa39CD214D2",
+    "0xb819beE13a93599e4115db03cD068c1aF9Be4943",
+    "0xC70e8b05e1F3d5Eb135451fF5F82EfD6412C69a8",
+    "0xC613B14A2B96B8d5AC56b32822c14844182bDd63",
+    "0x89378Ea45E3c3496f1b55d8a24Ca96b25734A929",
+    "0xEB6dc0dC29F2640f02340637249FEd26B52E64C0",
+    "0x1eE9744BB58DFbb41eCad03eB9a11587722a8c67",
+    "0xeCD55C664D4430D1aD84676b8dBeF2067Cf7a7B6",
+    "0x418F71AbfFC5a00F5646245639B68f8C287CfAe5",
+    "0x784e4EC7072Efb6e9d269864fBC3C062D9FA9A17"
+  ]
+}

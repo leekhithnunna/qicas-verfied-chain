@@ -1,0 +1,2 @@
+# Solidity sources are hashed into contract metadata: keep LF on every platform (chain/compile.js also normalises).
+*.sol text eol=lf

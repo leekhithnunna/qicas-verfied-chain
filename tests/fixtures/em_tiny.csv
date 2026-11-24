@@ -1,0 +1,4 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source,Data estimated,Data estimation method
+2030-01-02T11:00:00.000000,Testland,Test zone,XX-TEST,111.40,150.00,10,10,synthetic,false,""
+2030-01-02T12:00:00.000000,Testland,Test zone,XX-TEST,222.50,260.49,20,20,synthetic,true,SYNTHETIC
+2030-01-02T13:00:00.000000,Testland,Test zone,XX-TEST,333.60,370.00,30,30,synthetic,false,""
